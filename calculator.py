@@ -8,6 +8,8 @@
 a=int(input("Enter number 1 : "))
 o=input("Enter operator : ")
 b=int(input("Enter number 2 : "))
+if b==0:
+    print("Exception cannot divide by 0")
 
 if o[0] in [ '+','-','*','/' ]:
     if o[0] == '+':
