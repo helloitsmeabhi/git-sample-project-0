@@ -10,16 +10,16 @@ o=input("Enter operator : ")
 b=int(input("Enter number 2 : "))
 if b==0:
     print("Exception cannot divide by 0")
-
-if o[0] in [ '+','-','*','/' ]:
-    if o[0] == '+':
-        out = a + b
-    elif o[0] == '-':
-        out = a - b
-    elif o[0] == '*':
-        out = a * b
-    elif o[0] == '/':
-        out = a//b
-    print("Output : ",out)
 else:
-    print("Error : Invalid Operator")
+    if o[0] in [ '+','-','*','/' ]:
+        if o[0] == '+':
+            out = a + b
+        elif o[0] == '-':
+            out = a - b
+        elif o[0] == '*':
+            out = a * b
+        elif o[0] == '/':
+            out = a//b
+        print("Output : ",out)
+    else:
+        print("Error : Invalid Operator")
